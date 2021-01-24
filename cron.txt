@@ -1,0 +1,31 @@
+Hi, PyCharm
+Traceback (most recent call last):
+  File "main.py", line 104, in <module>
+    next = data['paging'].get('next')
+KeyError: 'paging'
+Building sites … WARN 2021/01/24 14:46:01 Page.Hugo is deprecated and will be removed in a future release. Use the global hugo function.
+WARN 2021/01/24 14:46:01 Page.LanguagePrefix is deprecated and will be removed in a future release. Use .Site.LanguagePrefix.
+WARN 2021/01/24 14:46:01 Page.RSSLink is deprecated and will be removed in a future release. Use the Output Format's link, e.g. something like: 
+    {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}
+
+                   | EN   
+-------------------+------
+  Pages            | 166  
+  Paginator pages  |   0  
+  Non-page files   |   5  
+  Static files     |   0  
+  Processed images |   0  
+  Aliases          |   0  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 138 ms
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Everything up-to-date
