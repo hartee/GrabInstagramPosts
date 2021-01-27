@@ -20,7 +20,7 @@ def extract_title(caption):
 
 
 def extract_caption(caption):
-    res = re.search("(?P<caption>.+?(?=http))", caption.replace("\n", ""))
+    res = re.search("(?P<caption>.+?(?=http))", caption)
     if res:
         print (res.group(1))
         return res.group(1)
