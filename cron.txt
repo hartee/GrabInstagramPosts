@@ -2,6 +2,8 @@ Hi, PyCharm
 https://graph.instagram.com/me/media?access_token=IGQVJWMGRIWHp0aXNRSDhxZAlFTdVhxNHVsN3VMT2FrUkIzVFdGNHgxaHExZAFU4aDctXzlJbVlpQVRUeXQzMEpUc2owSHFqWDNwWTlFVE5nNjJIWWc4Q080d2Y4SVA4SUplbHJ4TjFPdGdZAVHpsOE1SXwZDZD&fields=media_url,media_type,caption,permalink,timestamp
 
 Processing...
+17855328176454605
+I'm not much of a country music fan - a rough estimate is that 0.01% of my collection is actually country, which includes both Ray Charles and the banjos from Deliverance (which I suppose is more Appalachian folk?). Anywho, I've been listening to this lately and its mainly because of the lead guitar. As far as I can tell it is Chip Young, who was a Nashville session guitarist for a long time, so that makes sense. Anyway, back to the guitar...live versions of this always sound more ..country...to me. But this studio version almost sounds rock-ish (and really modern considering this was 1973). Just listen to the first 10 secs of the track and tell me it still sounds country. I mean, it freakin' DRIVES! Later live versions are much more "thumbed" for want of a better word. Was that 'cause Chip didn't tour, or maybe people preferred the more country version? Anyway. ☺ 
 17883022982055869
 Lenny Kravitz was the first black rock star I ever knew about; I heard him before I heard Hendrix, whom he is often compared to. I had never seen anyone who looked quite like him play like that. 
 17883575980977998
@@ -50,9 +52,9 @@ I always liked this album as it was really un-Madonna. A little electronic. A li
 For Record Store Day they often release early or alternative takes of tracks. I know it's a scam, but I fall for it anyway.  Every now and then there is a gem like this early take of Stevie Nicks' "Landslide". It's not hugely different,  but it does have a more intimate,  raw nature, than the version that made it to the original album.
 17853045035388048
 Found this in the crates this weekend. Merry Clayton.  A little known gospel singer, she did the backing vocals for one or two songs by some English band. 
+Processing...
 17924521039471401
 Morning filled with named entity extraction and LSTMs and RNNs and GRUs, my brain is already fried. So maybe a bit of sugary pop for Friday is called for. (Even the album looks like candy!)
-Processing...
 17968649215340669
 This album was so big, and "Hello" of course went #1, but the track that grabs me most was one I'd never actually heard until I played the album. I remember I was in the kitchen cooking and I stopped, went to the turntable and restarted it and just sat there mesmerized. Even now when I hear it I have to stop whatever I'm doing and just listen.
 17868539471156040
@@ -101,9 +103,9 @@ They are still waiting for that guitar to come back down.
 Back when my daughter was studying the viola I introduced her to Lindsey Stirling. Of course she's long forgotten that and insists I could never be cool enough to have heard of her...so of course I had to break this out. 
 17912583664524136
 I confess I'd never heard of Santa Esmeralda, certainly not their version of Nina Simone's "Don't Let Me Be Misunderstood. I remember Costello and of course, The Animals, but after Kill Bill theirs is the only version I can imagine. 
+Processing...
 17894374969688950
 It's 1969, and Bill Graham is asked to help produce this music festival in NY. As part of the deal he insists that this new band he is managing be included. No one outside of San Francisco knew who they were, but whatever. Sure. Santana got paid $1,500 for the gig. This is the live recording of their performance. 
-Processing...
 17899732402624123
 ...sensible, logical, responsible, practical...
 17879704741903510
@@ -155,9 +157,9 @@ VOTE.
 It's Friday! Need to spice up my gumbo. Actually, I've no idea how to describe this album. Rolling Stone calls it " an undulating trance throb that shimmers with shades of rock, contemporary symphonics, dub, disco, house, spoken word, whatever. "  Righhht. 
 17858104805283423
 Joni never lies. 
+Processing...
 18129433507143700
 Seth McFarlane did a surprisingly good take on it in "Sing", but this is my favorite cover of Sinatra's standard. 
-Processing...
 17877433333933988
 As a kid I thought Donny Hathaway was just the coolest cat anywhere. Still do. "Quite simply one of the best live albums ever recorded" - BBC.  Damn straight.  
 18090471613203094
@@ -206,17 +208,18 @@ The woman on the cover lives in my neighborhood. I met her once years ago.  Ther
 Not sure why I picked this one to highlight, after years I'm still trying to figure out if I even actually LIKE this album.  Maybe that's it, I'm in a bit of a contrary mood so some dark trip hop works. (And actually it's easy to study to. Blue Lines and Protection are more danceable).
 17868216248061733
 In my house growing up we only listened to classical jazz. So of course when I could finally buy my own music this was the first album I got. Houses Of The Holy.  Still a great album!
-17960455117356601
-Ta da! Lost for 58 years! Ella's 1962 concert in Berlin rediscovered and finally released.
-Finished processing feed
-Building sites … WARN 2021/01/26 16:55:04 Page.Hugo is deprecated and will be removed in a future release. Use the global hugo function.
-WARN 2021/01/26 16:55:04 Page.LanguagePrefix is deprecated and will be removed in a future release. Use .Site.LanguagePrefix.
-WARN 2021/01/26 16:55:04 Page.RSSLink is deprecated and will be removed in a future release. Use the Output Format's link, e.g. something like: 
+Traceback (most recent call last):
+  File "grabMusic.py", line 104, in <module>
+    next = data['paging'].get('next')
+KeyError: 'paging'
+Building sites … WARN 2021/01/27 15:41:05 Page.Hugo is deprecated and will be removed in a future release. Use the global hugo function.
+WARN 2021/01/27 15:41:05 Page.LanguagePrefix is deprecated and will be removed in a future release. Use .Site.LanguagePrefix.
+WARN 2021/01/27 15:41:05 Page.RSSLink is deprecated and will be removed in a future release. Use the Output Format's link, e.g. something like: 
     {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}
 
                    | EN   
 -------------------+------
-  Pages            | 168  
+  Pages            | 169  
   Paginator pages  |   0  
   Non-page files   |   5  
   Static files     |   0  
@@ -225,7 +228,7 @@ WARN 2021/01/26 16:55:04 Page.RSSLink is deprecated and will be removed in a fut
   Sitemaps         |   1  
   Cleaned          |   0  
 
-Total in 175 ms
+Total in 308 ms
 On branch master
 Your branch is up to date with 'origin/master'.
 
