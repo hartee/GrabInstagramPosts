@@ -1,11 +1,6 @@
 import requests
 import re
 
-PERMALINK = """
-https://graph.instagram.com/me/media?access_token=IGQVJWMGRIWHp0aXNRSDhxZAlFTdVhxNHVsN3VMT2FrUkIzVFdGNHgxaHExZAFU4aDctXzlJbVlpQVRUeXQzMEpUc2owSHFqWDNwWTlFVE5nNjJIWWc4Q080d2Y4SVA4SUplbHJ4TjFPdGdZAVHpsOE1SXwZDZD&fields=media_url,media_type,caption,permalink,timestamp
-"""
-
-
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
@@ -34,7 +29,7 @@ def extract_caption(caption):
         return caption
 
 
-def extract_link(caption): 
+def extract_link(caption):
     res = re.search("(?P<url>https?://[^\s]+)", caption)
     if res:
         return res.group("url")
@@ -98,6 +93,11 @@ def generate_pages(data):
 
 if __name__ == '__main__':
     print_hi('PyCharm')
+
+    linkfile = open('plink.txt', 'r')
+    PERMALINK = linkfile.readline()
+    print(PERMALINK)
+
     data = get_permalink(PERMALINK)
 
     while True:
