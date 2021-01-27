@@ -209,9 +209,9 @@ In my house growing up we only listened to classical jazz. So of course when I c
 17960455117356601
 Ta da! Lost for 58 years! Ella's 1962 concert in Berlin rediscovered and finally released.
 Finished processing feed
-Building sites … WARN 2021/01/26 16:54:04 Page.Hugo is deprecated and will be removed in a future release. Use the global hugo function.
-WARN 2021/01/26 16:54:04 Page.LanguagePrefix is deprecated and will be removed in a future release. Use .Site.LanguagePrefix.
-WARN 2021/01/26 16:54:04 Page.RSSLink is deprecated and will be removed in a future release. Use the Output Format's link, e.g. something like: 
+Building sites … WARN 2021/01/26 16:55:04 Page.Hugo is deprecated and will be removed in a future release. Use the global hugo function.
+WARN 2021/01/26 16:55:04 Page.LanguagePrefix is deprecated and will be removed in a future release. Use .Site.LanguagePrefix.
+WARN 2021/01/26 16:55:04 Page.RSSLink is deprecated and will be removed in a future release. Use the Output Format's link, e.g. something like: 
     {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}
 
                    | EN   
@@ -225,7 +225,7 @@ WARN 2021/01/26 16:54:04 Page.RSSLink is deprecated and will be removed in a fut
   Sitemaps         |   1  
   Cleaned          |   0  
 
-Total in 172 ms
+Total in 175 ms
 On branch master
 Your branch is up to date with 'origin/master'.
 
