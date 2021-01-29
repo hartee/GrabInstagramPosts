@@ -20,12 +20,11 @@ def extract_title(caption):
 
 
 def extract_caption(caption):
-    res = re.search("(?P<caption>.+?(?=http))", caption)
+    res = re.search("(?P<caption>.+?(?=http))", caption.replace("\n","__"))
     if res:
-        print (res.group(1))
-        return res.group(1)
+        # TODO: FIX this regex hack properly
+        return res.group(1).replace("__","\n")
     else:
-        print(caption)
         return caption
 
 
@@ -92,13 +91,14 @@ def generate_pages(data):
 
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print_hi('grabMusic')
 
     linkfile = open('plink.txt', 'r')
     PERMALINK = linkfile.readline()
     print(PERMALINK)
 
     data = get_permalink(PERMALINK)
+    # TODO: create an error log for the file
 
     while True:
         next = data['paging'].get('next')
