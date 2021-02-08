@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+rm /Users/ea/Projects/Portfolio/Portfolio/content/music/*/*.md
+
 cd /Users/ea/Projects/NewAdventure/GrabInstagram/grabInstagram
 /usr/local/bin/pipenv run python grabMusic.py
 cp /Users/ea/Projects/NewAdventure/GrabInstagram/grabInstagram/*.md /Users/ea/Projects/Portfolio/Portfolio/content/music/2020

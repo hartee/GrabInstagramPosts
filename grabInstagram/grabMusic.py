@@ -55,42 +55,41 @@ def generate_pages(data):
         # f.close()
         try:
             print(post["id"])
-            print(post)
-            print()
 
-            fname = post["id"] + ".md"
-            f = open(fname, "w+")
+            if post['caption'] is not None:
+                fname = post["id"] + ".md"
+                f = open(fname, "w+")
 
-            f.write("---  \r\n")
+                f.write("---  \r\n")
 
-            title = extract_title(post['caption'])
-            if title is not None:
-                f.write("title:  " + extract_title(post['caption']) + "  \r\n")
-            else:
-                f.write("title: " + post["id"] + "  \r\n")
+                title = extract_title(post['caption'])
+                if title is not None:
+                    f.write("title:  " + extract_title(post['caption']) + "  \r\n")
+                else:
+                    f.write("title: " + post["id"] + "  \r\n")
 
-            f.write("date: " + post["timestamp"] + "  \r\n")
-            f.write("categories: [music]  \r\n")
-            f.write("tags: [music, culture]  \r\n")
-            f.write("language: en  \r\n")
-            f.write("---  \r\n")
-            f.write("  \r\n")
-            f.write('<img src="' + post["media_url"] + '">   \r\n')
-            f.write("   \r\n")
+                f.write("date: " + post["timestamp"] + "  \r\n")
+                f.write("categories: [music]  \r\n")
+                f.write("tags: [music, culture]  \r\n")
+                f.write("language: en  \r\n")
+                f.write("---  \r\n")
+                f.write("  \r\n")
+                f.write('<img src="' + post["media_url"] + '">   \r\n')
+                f.write("   \r\n")
 
-            caption = extract_caption(post['caption'])
-            link = extract_link(post['caption'])
+                caption = extract_caption(post['caption'])
+                link = extract_link(post['caption'])
 
-            if caption is not None:
-                f.write(caption + "  \r\n")
-            f.write("   \r\n")
-            f.write("   \r\n")
+                if caption is not None:
+                    f.write(caption + "  \r\n")
+                f.write("   \r\n")
+                f.write("   \r\n")
 
 
-            if link is not None:
-                f.write("[video](" + link + ")  \r\n")
+                if link is not None:
+                    f.write("[video](" + link + ")  \r\n")
 
-            f.close()
+                f.close()
         except:
             print("An exception occurred...")
             print()
@@ -105,6 +104,7 @@ if __name__ == '__main__':
     print(PERMALINK)
 
     data = get_permalink(PERMALINK)
+    print(data)
     # TODO: create an error log for the file
 
     while True:
