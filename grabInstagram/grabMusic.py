@@ -53,41 +53,48 @@ def generate_pages(data):
         # <a href="https://g.co/kgs/GBxFD2">video</a>
         #
         # f.close()
+        try:
+            print(post["id"])
+            print(post)
+            print()
 
-        print(post["id"])
-        fname = post["id"] + ".md"
-        f = open(fname, "w+")
+            fname = post["id"] + ".md"
+            f = open(fname, "w+")
 
-        f.write("---  \r\n")
+            f.write("---  \r\n")
 
-        title = extract_title(post['caption'])
-        if title is not None:
-            f.write("title:  " + extract_title(post['caption']) + "  \r\n")
-        else:
-            f.write("title: " + post["id"] + "  \r\n")
+            title = extract_title(post['caption'])
+            if title is not None:
+                f.write("title:  " + extract_title(post['caption']) + "  \r\n")
+            else:
+                f.write("title: " + post["id"] + "  \r\n")
 
-        f.write("date: " + post["timestamp"] + "  \r\n")
-        f.write("categories: [music]  \r\n")
-        f.write("tags: [music, culture]  \r\n")
-        f.write("language: en  \r\n")
-        f.write("---  \r\n")
-        f.write("  \r\n")
-        f.write('<img src="' + post["media_url"] + '">   \r\n')
-        f.write("   \r\n")
+            f.write("date: " + post["timestamp"] + "  \r\n")
+            f.write("categories: [music]  \r\n")
+            f.write("tags: [music, culture]  \r\n")
+            f.write("language: en  \r\n")
+            f.write("---  \r\n")
+            f.write("  \r\n")
+            f.write('<img src="' + post["media_url"] + '">   \r\n')
+            f.write("   \r\n")
 
-        caption = extract_caption(post['caption'])
-        link = extract_link(post['caption'])
+            caption = extract_caption(post['caption'])
+            link = extract_link(post['caption'])
 
-        if caption is not None:
-            f.write(caption + "  \r\n")
-        f.write("   \r\n")
-        f.write("   \r\n")
+            if caption is not None:
+                f.write(caption + "  \r\n")
+            f.write("   \r\n")
+            f.write("   \r\n")
 
 
-        if link is not None:
-            f.write("[video](" + link + ")  \r\n")
+            if link is not None:
+                f.write("[video](" + link + ")  \r\n")
 
-        f.close()
+            f.close()
+        except:
+            print("An exception occurred...")
+            print()
+            print(post)
 
 
 if __name__ == '__main__':
